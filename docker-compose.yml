@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=books
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build: backend/
+    command:  uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 5435
+    ports:
+      - "5435:5435"
+    volumes: 
+      - migration_data:/app/alembic/versions
+    environment:
+      - DB_URL=postgresql+psycopg2://user:password@db/books
+    depends_on:
+      - db
+
+  frontend:
+    build: frontend/
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  db_data:
+  migration_data:

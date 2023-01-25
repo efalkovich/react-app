@@ -1,0 +1,112 @@
+.Uri  {
+    color: blue;
+    cursor: pointer;
+}
+
+.canv {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    margin-top: 60px;
+}
+
+canvas {
+    transform: scale(1.8);
+}
+
+.Uri:hover {
+    text-decoration: underline;
+}
+
+.book {
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 20px 50px;
+    width: 100%;
+}
+
+.booksBl {
+    width: 700px;
+}
+
+.AllBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.booksBl > .headerBtn {
+    margin-left: 30px;
+    width: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.book h2 {
+    text-align: center;
+}
+
+.booksBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.book img {
+    width: 20px;
+
+}
+
+.bookBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookBtnBlock .editAddBtn {
+    min-width: 47px;
+    cursor: pointer;
+}
+
+.bookBtnBlock .editAddBtn:first-child {
+    margin-bottom: 5px;
+}
+
+.popupForm h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inputBlock {
+    display: flex;
+}
+
+.inputBlock input[type="text"] {
+    width: 100%;
+}
+
+.popupForm input {
+    margin-bottom: 10px;
+}
+
+.popupForm .AsySel {
+    margin-bottom: 10px;
+}
+
+.popupForm .headerBtn {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.deleteBlock h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.deleteBlock p {
+    margin-bottom: 10px;
+}
+
+.deleteBlock .headerBtn {
+    cursor: pointer;
+}
