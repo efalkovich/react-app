@@ -4,7 +4,7 @@
 Для развертывания необходимо запустить докер и последовательно выполнить следующие команды в терминале:
 * docker-compose up -d --build
 * docker-compose exec backend alembic revision -m "test"
-* docker-compose exec backend alembic upgrade head
+* docker-compose exec backend alembic upgrade head<br/>
 Сайт будет находиться на localhost:3000.
 
 Данное приложение хранит и отображает информацию об авторах и книгах. Данные об объектах можно удалять и редактировать, а также можно добавлять новые объекты.
