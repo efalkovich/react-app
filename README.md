@@ -1,7 +1,7 @@
 # react-app
 Это приложение было создано в рамках дисциплины "Web программирование".
 
-Для развертывания необходимо выполнить последовательно следующие команды в терминале:
+Для развертывания необходимо запустить докер и последовательно выполнить следующие команды в терминале:
 * docker-compose up -d --build
 * docker-compose exec backend alembic revision -m "test"
 * docker-compose exec backend alembic upgrade head
